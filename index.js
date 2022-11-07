@@ -7,7 +7,7 @@ const DOMSelectors = {
 
 function backgroundAndText(background, text) {
   background.style.backgroundColor = "grey";
-  text.textContent = " and now this is a list of avengers";
+  text.textContent = " and now this is a bigger grey box";
   text.style.fontSize = "40px";
 }
 
@@ -16,16 +16,17 @@ DOMSelectors.button.addEventListener("click", function () {
 });
 
 function changeLi() {
+  let pointIndex = 1;
   DOMSelectors.points.forEach((point) => {
-    point.addEeventListener;
-    "click",
-      function () {
-        point.textContent("hello");
-      };
+    point.addEventListener("click", function () {
+      point.textContent = `hello i am point ${pointIndex}`;
+      pointIndex++;
+    });
   });
 }
+changeLi();
 
-const qsa = (els) => document.querySelectorAll(els);
+/* const qsa = (els) => document.querySelectorAll(els);
 
 const allAvengers = qsa(".avenger");
 console.log(allAvengers);
@@ -42,7 +43,7 @@ console.log(originalAvengers);
 
 const associatesArray = Array.from(qsa(".associate"));
 const associates = associatesArray.map((item) => item.innerHTML);
-console.log(associates);
+console.log(associates); */
 
 /* const DOMSelectors = {
   button: document.getElementById("btn"),
