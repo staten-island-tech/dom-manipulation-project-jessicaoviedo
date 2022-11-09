@@ -1,30 +1,10 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
-  text: document.querySelector("#text"),
-  box: document.getElementById("big-grey-box"),
-  points: document.querySelectorAll(".point"), //node list
+  box: document.getElementById("container-box"),
+  input: document.querySelector(`#input`),
 };
 
-function backgroundAndText(background, text) {
-  background.style.backgroundColor = "grey";
-  text.textContent = " and now this is a bigger grey box";
-  text.style.fontSize = "40px";
-}
-
-DOMSelectors.button.addEventListener("click", function () {
-  backgroundAndText(DOMSelectors.box, DOMSelectors.text);
-});
-
-function changeLi() {
-  let pointIndex = 1;
-  DOMSelectors.points.forEach((point) => {
-    point.addEventListener("click", function () {
-      point.textContent = `hello i am point ${pointIndex}`;
-      pointIndex++;
-    });
-  });
-}
-changeLi();
+DOMSelectors.box.insertAdjacentHTML("beforeend", `<h1>we are an H1</h1>`);
 
 /* const qsa = (els) => document.querySelectorAll(els);
 
