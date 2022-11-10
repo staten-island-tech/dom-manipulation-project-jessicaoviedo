@@ -1,29 +1,36 @@
 const DOMSelectors = {
-  button: document.getElementById("btn"),
-  box: document.getElementById("container-box"),
-  input: document.querySelector(`#input`),
+  title: document.getElementById("title"),
+  artist: document.getElementById("artist"),
+  url: document.getElementById("url"),
+  display: document.getElementById("display"),
 };
 
-DOMSelectors.box.insertAdjacentHTML("beforeend", `<h1>we are an H1</h1>`);
+const title = "";
+console.log(DOMSelectors.title);
+const StarWars = {
+  title: "star wars",
+};
 
-/* const qsa = (els) => document.querySelectorAll(els);
+function makeCard() {
+  //make the card
+  //get delete button
+  //querySelectorAll returns node list
+  //for each btuton add event listener 
+  //function(e) event.target
+}
 
-const allAvengers = qsa(".avenger");
-console.log(allAvengers);
+document.getElementById("form").addEventListener("submit", function (e)) {
+  e.preventDefault()
+}
+/* DOMSelectors.button.addEventListener("click", function () {
+  let input = DOMSelectors.input.value;
+  DOMSelectors.box.insertAdjacentHTML("beforeend", `<p>${input}</p>`);
+  DOMSelectors.input.value = "";
+}); */
 
-const allAvengersArray = Array.from(allAvengers);
-
-const originalAvengers = allAvengersArray.filter((node) => {
-  if (node.classList[1] === "original") {
-    return true;
-  }
-  return false;
-});
-console.log(originalAvengers);
-
-const associatesArray = Array.from(qsa(".associate"));
-const associates = associatesArray.map((item) => item.innerHTML);
-console.log(associates); */
+// step 1- get data from user, take the data save to it a variable
+// step 2- create an object from that
+// step 3 - push that data into html
 
 /* const DOMSelectors = {
   button: document.getElementById("btn"),
