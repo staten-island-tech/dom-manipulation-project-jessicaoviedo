@@ -1,11 +1,16 @@
 const DOMSelectors = {
-  title: document.getElementById("title"),
-  artist: document.getElementById("artist"),
-  url: document.getElementById("url"),
-  display: document.getElementById("display"),
+  submit: document.querySelector("#form"),
+  text: document.querySelector("#text"),
+  box: document.getElementById("big-black-box"),
+  points: document.querySelectorAll(".point"),
 };
 
-const title = "";
+DOMSelectors.submit.addEventListener("submit", function (e) {
+  e.preventDefault();
+  console.log(e);
+});
+
+/* const title = "";
 console.log(DOMSelectors.title);
 const StarWars = {
   title: "star wars",
@@ -15,13 +20,21 @@ function makeCard() {
   //make the card
   //get delete button
   //querySelectorAll returns node list
-  //for each btuton add event listener 
+  //for each btuton add event listener
   //function(e) event.target
 }
 
-document.getElementById("form").addEventListener("submit", function (e)) {
-  e.preventDefault()
-}
+document.getElementById("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+}); */
+
+//const DOMSelectors = {
+//title: document.getElementById("title"),
+//artist: document.getElementById("artist"),
+//url: document.getElementById("url"),
+//display: document.getElementById("display"),
+//};
+
 /* DOMSelectors.button.addEventListener("click", function () {
   let input = DOMSelectors.input.value;
   DOMSelectors.box.insertAdjacentHTML("beforeend", `<p>${input}</p>`);

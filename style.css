@@ -1,11 +1,8 @@
 #container-box {
     background-color: black;
 
-    font-size: 4vh;
+    font-size: 5vh;
     color: cornsilk;
     text-align: center;
 }
 
-.cat-poster {
-    width: 10rem;
-}
