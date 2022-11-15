@@ -7,8 +7,12 @@ const DOMSelectors = {
 
 DOMSelectors.submit.addEventListener("submit", function (e) {
   e.preventDefault();
+  console.log("card");
   console.log(e);
 });
+
+DOMSelectors.box.insertAdjacentHTML("card", `<p>${input}</p>`);
+DOMSelectors.input.value = "";
 
 /* const title = "";
 console.log(DOMSelectors.title);
