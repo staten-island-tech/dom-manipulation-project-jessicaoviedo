@@ -5,14 +5,12 @@ const DOMSelectors = {
   points: document.querySelectorAll(".point"),
 };
 
-DOMSelectors.submit.addEventListener("submit", function (e) {
+DOMSelectors.submit.addEventListener("click", function (e) {
+  let input = DOMSelectors.submit.value;
   e.preventDefault();
-  console.log("card");
+  DOMSelectors.box.insertAdjacentHTML("beforeend", `<p>${input}</p>`);
   console.log(e);
 });
-
-DOMSelectors.box.insertAdjacentHTML("card", `<p>${input}</p>`);
-DOMSelectors.input.value = "";
 
 /* const title = "";
 console.log(DOMSelectors.title);

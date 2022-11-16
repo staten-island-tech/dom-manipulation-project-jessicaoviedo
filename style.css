@@ -5,25 +5,10 @@
     color: cornsilk;
     text-align: center;
 } */
-* {
-    box-sizing: border-box;
-}
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-}
-
-.row {margin: 0, -5px;}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 16px;
+.cards {
     text-align: center;
-    background-color: #f1f1f1;
+    margin: 60px auto;
+    border: 5px solid grey;
+    padding: 50px 25px;
+    width: 25vw
 }
