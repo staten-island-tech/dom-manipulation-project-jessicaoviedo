@@ -8,7 +8,7 @@ const DOMSelectors = {
 DOMSelectors.form.addEventListener("submit", function (e) {
   e.preventDefault();
   console.log(e);
-  let title = DOMSelectors.title.submit;
-  let artist = DOMSelectors.artist.submit;
-  let url = DOMSelectors.url.submit;
+  let title = DOMSelectors.title.value;
+  let artist = DOMSelectors.artist.value;
+  let url = DOMSelectors.url.value;
 });
