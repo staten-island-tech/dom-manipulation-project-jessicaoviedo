@@ -1,14 +1,1 @@
-/* #container-box {
-    background-color: black;
 
-    font-size: 5vh;
-    color: cornsilk;
-    text-align: center;
-} */
-.cards {
-    text-align: center;
-    margin: 60px auto;
-    border: 5px solid grey;
-    padding: 50px 25px;
-    width: 25vw
-}
