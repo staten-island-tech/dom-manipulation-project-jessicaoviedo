@@ -1,4 +1,5 @@
 const DOMSelectors = {
+  display: document.querySelector("#display"),
   form: document.querySelector("#form"),
   albumname: document.getElementById("albumname"),
   artist: document.getElementById("artist"),
@@ -14,6 +15,13 @@ DOMSelectors.form.addEventListener("submit", function (e) {
   console.log(albumname);
   console.log(artist);
   console.log(url);
-});
 
-DOMSelectors.form.insertAdjacentHTML("beforeend", `cards`);
+  DOMSelectors.display.insertAdjacentHTML(
+    "beforeend",
+    `<div class="card" id="card-box">
+  <h2 class="card-albumtitle">${albumname}</h2>
+  <h3 class="card-artist">${artist}</h3>
+  <h3 class="albumcover-url">${url}</h3>
+  </div>`
+  );
+});
