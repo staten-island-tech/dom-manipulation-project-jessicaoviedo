@@ -21,7 +21,8 @@ DOMSelectors.form.addEventListener("submit", function (e) {
     `<div class="card" id="card-box">
   <h2 class="card-albumtitle">${albumname}</h2>
   <h3 class="card-artist">${artist}</h3>
-  <h3 class="albumcover-url">${url}</h3>
+  <img class="albumimg" src="${url}" alt="this is the album cover">
+  <button class="rmv-button">REMOVE</button>
   </div>`
   );
 });
