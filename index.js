@@ -25,4 +25,23 @@ DOMSelectors.form.addEventListener("submit", function (e) {
   <button class="rmv-button">REMOVE</button>
   </div>`
   );
+
+  clearvalues();
+
+  rmvbutton();
 });
+
+function clearvalues() {
+  DOMSelectors.albumname.value = "";
+  DOMSelectors.artist.value = "";
+  DOMSelectors.url.value = "";
+}
+
+function rmvbutton() {
+  const rmv = document.querySelectorAll(".rmv-button");
+  rmv.forEach((element) => {
+    element.addEventListener("click", function (btn) {
+      btn.target.parentElement.remove();
+    });
+  });
+}
