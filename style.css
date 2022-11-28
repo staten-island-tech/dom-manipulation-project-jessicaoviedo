@@ -19,6 +19,15 @@ body {
 .rmv-button:hover {
     transform: scale(1.1);
 }
+
 .btn {
     background-color: #F08080;
+}
+
+.form-parent {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
 }
